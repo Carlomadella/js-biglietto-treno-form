@@ -16,18 +16,62 @@ MILESTONE 1: Iniziamo implementando il programma senza alcuna estetica: usando e
 </head>
 <body>
     <div class="container-fluid">
-        <div class="col-4">
-            <h2>ACQUISTA QUI IL TUO BIGLIETTO</h2>
-            <p>Offerte: 
-                per i minorenni è previsto uno sconto del 20%
-                per gli over 65 uno sconto del 40%
-            </p>
+        <div class="row d-flex justify-content-center">
+            <h2 class="my-3">ACQUISTA QUI IL TUO BIGLIETTO</h2>
+            <p class="d-flex flex-column">
+            Offerte: 
+            <span>per i minorenni è previsto uno sconto del 20%</span>
+            <span>per gli over 65 uno sconto del 40%</span>
+        </p>
         </div>
-        <div class="col-8">
-            <!-- <input type="text" placeholder="Nome completo" id="nominativo" class="form-control" required="yes"> -->
-            <input type="text" placeholder="Distanza da percorrere (km)" id="distanza" class="form-control" required="yes">
-            <input type="text" placeholder="Inserisci l'età del passeggero" id="età" class="form-control" required="yes">
-            <button>Submit</button>
+        <div class="row">
+            <div class="col-5 mx-3">
+                <form action="form">
+                    <div class="row row-cols-3 g-3">
+                        <div class="col">
+                            <input type="text" placeholder="Età del passeggero" id="etàInput" ></input>
+                        </div>
+                        <div class="col">
+                            <input type="text" placeholder="Distanza da percorrere(km)" id="distanzaInput">
+                        </div>
+                        <div class="col">
+                            <input type="text" placeholder="Nome e cognome" id="nominativoInput">
+                        </div>
+                        <div class="col"><button>Submit</button></div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-5">
+                <div class="card">
+                    <div class="card-header" id="company">
+                        Riassunto prenotazione
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-8">
+                                <p>
+                                    Nominativo passeggero:<span id="nameOutput">Segnaposto nome</span>
+                                </p>
+                                <p id="role">
+                                    Distanza da percorrere: <span id="distanceOutput">Segnaposto distanza</span>
+                                </p>
+                                <p>
+                                    Età del passeggero: <span id="ageOutput">Segnaposto età</span>
+                                </p>
+                                <p>Totale da pagare: <span id="priceOutput"></span> €</p>
+                            </div>
+                            <div class="col-4">
+                                <p>
+                                    <span id="company-name">
+                                        Segnaposto azienda
+                                    </span>
+                                </p>
+                                <img src="" alt="" id="logo-company">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="./js/script.js"></script>
