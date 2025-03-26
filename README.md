@@ -18,4 +18,4 @@ MILESTONE 3: Ora che la logica è funzionante in pagina, possiamo andare a dedic
 Numero minimo di push: 8
 
 Nota: Se non vi sentite particolarmente creativi, questa potrebbe essere un’implementazione da seguire per il secondo milestone. Potete scegliere di implementare una soluzione completamente diversa oppure simile, ma in ogni caso cercate di farla vostra.
- -->
+-->
