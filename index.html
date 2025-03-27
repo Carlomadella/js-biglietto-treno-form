@@ -15,58 +15,76 @@ MILESTONE 1: Iniziamo implementando il programma senza alcuna estetica: usando e
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row d-flex justify-content-center">
-            <h2 class="my-3">ACQUISTA QUI IL TUO BIGLIETTO</h2>
-            <p class="d-flex flex-column">
-            Offerte: 
-            <span>per i minorenni è previsto uno sconto del 20%</span>
-            <span>per gli over 65 uno sconto del 40%</span>
-        </p>
+    <div class="container-fluid ">
+        <div class="row d-flex  justify-content-center align-content-center">
+            <div class="col-6 mx-3">
+                <img src="./img/logo.png" alt="">
+                <h1 class="my-3 color-brown">BENVENUTO SU TRAINITALY</h1>
+            </div>
+            <div class="col-6">
+                <p class="d-flex flex-column">
+                    In questa schermata è possibile acquistare il biglietto per viaggiare con la migliore compagnia di treni italiana. dai inoltre un'occhiata alle offerte di seguito
+                    Offerte disponibili:
+                </p>
+            </div>
         </div>
+    </div>
+    <div class="container-fluid px-3 py-5">
         <div class="row">
-            <div class="col-5 mx-3">
-                <form action="form">
+            <div class="col-6 px-3">
+                <h4>Inserisci le credenziali per completare l'acquisto</h4>
+                <form action="">
                     <div class="row row-cols-3 g-3">
                         <div class="col">
-                            <input type="text" placeholder="Età del passeggero" id="etàInput" ></input>
+                            <input type="text" placeholder="Età del passeggero" id="etàInput" class="bg-brown"></input>
                         </div>
                         <div class="col">
-                            <input type="text" placeholder="Distanza da percorrere(km)" id="distanzaInput">
+                            <input type="text" placeholder="Distanza da percorrere(km)" id="distanzaInput" class="bg-brown">
                         </div>
                         <div class="col">
-                            <input type="text" placeholder="Nome e cognome" id="nominativoInput">
+                            <input type="text" placeholder="Nome e cognome" id="nominativoInput" class="bg-brown"> 
                         </div>
-                        <div class="col"><button>Submit</button></div>
+                        <div class="col ">
+                            <button class="bg-brown">Submit</button>
+                        </div>
                     </div>
                 </form>
+                <div class="row py-5">
+                    <h4>Offerte disponibili</h4>
+                    <p class="">
+                        <span class="badge text-bg-primary mr-2">per i minori di 18 anni</span>è previsto uno sconto del 20%
+                        <span class="badge text-bg-warning">per gli over 65</span>uno sconto del 40%
+                    </p>
+                </div>
             </div>
-            <div class="col-5">
+            <div class="col-6">
                 <div class="card">
-                    <div class="card-header" id="company">
-                        Riassunto prenotazione
+                    <div class="card-header bg-brown" id="company">
+                        <h4 class="recap">Riassunto prenotazione</h4>
                     </div>
                     <div class="card-body">
                         <div class="row">
                             <div class="col-8">
                                 <p>
-                                    Nominativo passeggero:<span id="nameOutput">Segnaposto nome</span>
+                                    Nominativo passeggero:<span id="nameOutput"></span>
                                 </p>
                                 <p id="role">
-                                    Distanza da percorrere: <span id="distanceOutput">Segnaposto distanza</span>
+                                    Distanza da percorrere: <span id="distanceOutput"></span>
                                 </p>
                                 <p>
-                                    Età del passeggero: <span id="ageOutput">Segnaposto età</span>
+                                    Età del passeggero: <span id="ageOutput"></span>
                                 </p>
                                 <p>Totale da pagare: <span id="priceOutput"></span> €</p>
+                                <button class="py-2 mt-5 bg-brown">Procedi con l'acquisto</button>
                             </div>
                             <div class="col-4">
+                                <h6>TrainItaly</h6>
                                 <p>
                                     <span id="company-name">
-                                        Segnaposto azienda
+                                        <img src="./img/logo.png" alt="" class="img-fluid" id="logo-company">
                                     </span>
                                 </p>
-                                <img src="" alt="" id="logo-company">
+                                
                             </div>
                         </div>
                     </div>
